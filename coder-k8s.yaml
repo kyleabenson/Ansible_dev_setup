@@ -15,7 +15,7 @@ spec:
    protocol: TCP
  selector:
    app: code-server
- type: ClusterIP
+ type: LoadBalancer
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -41,3 +41,4 @@ spec:
         ports:
         - containerPort: 8080
           name: https
+        args: ["--no-auth"]
