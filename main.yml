@@ -1,0 +1,9 @@
+---
+- name: Create a k8s cluster for Ansible Development
+  hosts: localhost
+  tasks:
+    - name: Post JSON to GCP workspace to create k8s env
+      debug:
+        msg: "Placeholder"
+      
+    - name: 
